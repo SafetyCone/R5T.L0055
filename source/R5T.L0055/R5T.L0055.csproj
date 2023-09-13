@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <Version>1.0.0</Version>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>1591</NoWarn>
@@ -15,9 +15,11 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.F0033\source\R5T.F0033\R5T.F0033.csproj" />
     <ProjectReference Include="..\..\..\R5T.F0034\source\R5T.F0034\R5T.F0034.csproj" />
+    <ProjectReference Include="..\..\..\R5T.F0138\source\R5T.F0138\R5T.F0138.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0141\source\R5T.T0141\R5T.T0141.csproj" />
     <ProjectReference Include="..\..\..\R5T.Z0046\source\R5T.Z0046\R5T.Z0046.csproj" />
     <ProjectReference Include="..\..\..\R5T.Z0063\source\R5T.Z0063\R5T.Z0063.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0159\source\R5T.T0159.F000\R5T.T0159.F000.csproj" />
+    <ProjectReference Include="..\..\..\R5T.L0057\source\R5T.L0057\R5T.L0057.csproj" />
   </ItemGroup>
 </Project>
