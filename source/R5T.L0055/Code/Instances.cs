@@ -13,6 +13,7 @@ namespace R5T.L0055
         public static IDotnetPackPathOperator DotnetPackPathOperator => L0055.DotnetPackPathOperator.Instance;
         public static L0057.IExecutablePathOperator ExecutablePathOperator => L0057.ExecutablePathOperator.Instance;
         public static IFilePaths FilePaths => L0055.FilePaths.Instance;
+        public static L0053.IFileOperator FileOperator => L0053.FileOperator.Instance;
         public static F0033.INotepadPlusPlusOperator NotepadPlusPlusOperator => F0033.NotepadPlusPlusOperator.Instance;
         public static L0057.IPathOperator PathOperator => L0057.PathOperator.Instance;
         public static IRuntimeEnvironmentOperator RuntimeEnvironmentOperator => L0055.RuntimeEnvironmentOperator.Instance;

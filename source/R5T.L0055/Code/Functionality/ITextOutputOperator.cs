@@ -70,5 +70,17 @@ namespace R5T.L0055
 
             return (humanOutputTextFilePath, logFilePath);
         }
+
+        public (
+            ITextFilePath humanOutputTextFilePath,
+            ILogFilePath logFilePath)
+        In_TextOutputContext(
+            string logCategoryName,
+            Action<ITextOutput> textOutputAction)
+        {
+            return this.In_TextOutputContext_Synchronous(
+                logCategoryName,
+                textOutputAction);
+        }
     }
 }
