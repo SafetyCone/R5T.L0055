@@ -10,6 +10,7 @@ namespace R5T.L0055
 {
     [FunctionalityMarker]
     public partial interface IDotnetPackPathOperator : IFunctionalityMarker,
+        F0138.IDotnetPackPathOperator,
         L0064.F001.IDotnetPackPathOperator
     {
         /// <summary>
