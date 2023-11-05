@@ -1,5 +1,6 @@
 using System;
 using System.Threading.Tasks;
+
 using R5T.T0132;
 using R5T.T0159;
 using R5T.T0181;
@@ -10,7 +11,9 @@ namespace R5T.L0055
     [FunctionalityMarker]
     public partial interface ITextOutputOperator : IFunctionalityMarker
     {
-        public static T0159.F000.ITextOutputOperator Base => T0159.F000.TextOutputOperator.Instance;
+#pragma warning disable IDE1006 // Naming Styles
+        public T0159.F000.ITextOutputOperator _Base => T0159.F000.TextOutputOperator.Instance;
+#pragma warning restore IDE1006 // Naming Styles
 
 
         public (
@@ -24,7 +27,7 @@ namespace R5T.L0055
 
             var logFilePath = Instances.FilePaths.LogFilePath;
 
-            Base.InTextOutputContext_Synchronous(
+            _Base.InTextOutputContext_Synchronous(
                 humanOutputTextFilePath.Value,
                 logCategoryName,
                 logFilePath.Value,
@@ -44,7 +47,7 @@ namespace R5T.L0055
 
             var logFilePath = Instances.FilePaths.LogFilePath;
 
-            await Base.InTextOutputContext(
+            await _Base.InTextOutputContext(
                 humanOutputTextFilePath.Value,
                 logCategoryName,
                 logFilePath.Value,
@@ -62,7 +65,7 @@ namespace R5T.L0055
             ILogFilePath logFilePath,
             Func<ITextOutput, Task> textOutputAction)
         {
-            await Base.InTextOutputContext(
+            await _Base.InTextOutputContext(
                 humanOutputTextFilePath.Value,
                 logCategoryName,
                 logFilePath.Value,
