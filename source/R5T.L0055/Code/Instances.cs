@@ -14,7 +14,7 @@ namespace R5T.L0055
         public static L0053.IEnumerableOperator EnumerableOperator => L0053.EnumerableOperator.Instance;
         public static L0057.IExecutablePathOperator ExecutablePathOperator => L0057.ExecutablePathOperator.Instance;
         public static L0056.IFileOperator FileOperator => L0056.FileOperator.Instance;
-        public static L0056.IFileSystemOperator FileSystemOperator => L0056.FileSystemOperator.Instance;
+        public static L0057.IFileSystemOperator FileSystemOperator => L0057.FileSystemOperator.Instance;
         public static IFilePaths FilePaths => L0055.FilePaths.Instance;
         public static F0033.INotepadPlusPlusOperator NotepadPlusPlusOperator => F0033.NotepadPlusPlusOperator.Instance;
         public static L0057.IPathOperator PathOperator => L0057.PathOperator.Instance;
