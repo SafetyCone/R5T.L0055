@@ -13,6 +13,7 @@ namespace R5T.L0055
         public static IDotnetPackPathOperator DotnetPackPathOperator => L0055.DotnetPackPathOperator.Instance;
         public static L0053.IEnumerableOperator EnumerableOperator => L0053.EnumerableOperator.Instance;
         public static L0057.IExecutablePathOperator ExecutablePathOperator => L0057.ExecutablePathOperator.Instance;
+        public static L0074.IFileEqualityVerifier FileEqualityVerifier => L0074.FileEqualityVerifier.Instance;
         public static L0056.IFileOperator FileOperator => L0056.FileOperator.Instance;
         public static L0057.IFileSystemOperator FileSystemOperator => L0057.FileSystemOperator.Instance;
         public static IFilePaths FilePaths => L0055.FilePaths.Instance;
