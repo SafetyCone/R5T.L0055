@@ -14,7 +14,7 @@ namespace R5T.L0055
         Z0046.IFilePaths
     {
 #pragma warning disable IDE1006 // Naming Styles
-        public Z0063.Platform.IFilePaths _Platform_Z0063 => Z0063.Platform.FilePaths.Instance;
+        public Z0063.Z001.IFilePaths _Strings_Z0063 => Z0063.Z001.FilePaths.Instance;
         public Z0046.Platform.IFilePaths _Platform_Z0046 => Z0046.Platform.FilePaths.Instance;
 #pragma warning restore IDE1006 // Naming Styles
     }
